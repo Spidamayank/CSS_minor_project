@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    
+    padding-top: 0.1px;
+    position: relative;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    letter-spacing:-1px;
+    font-size: 45px;
+}
+#nav h2{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 23px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#center{
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#overlay{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 0;
+    padding: 3vw;
+    color: white;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vw ;
+}
+#over1 h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5vw;
+    
+}
+#over1 h2{
+    
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 2px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1vw 0;
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+
+}
+#over2 img{
+    height: 3vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 95%;
+    border-radius: 50%;
+    width: 17%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    margin-right: 2vw;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.114);
+    transition: all ease 2s;
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2vw 4vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1467632499275-7a693a761056?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#page2-part2{
+    height: 100%;
+    width: 45%;
+   
+}
+#page2-part2 img{
+    height: 78%;
+    width: 100%;
+    object-fit: cover; 
+}
+#written{
+    height: 19%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+#written h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#written p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#shot{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    
+}
+#shot h1{
+    padding:0vw 4vw;
+    font-family: monument;
+    font-size: 35px;
+}
+#page3{
+    height: 80%;
+    width: 100%;
+    /* background-color: skyblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2vw 4vw;
+}
+#page3-part1{
+    height: 100%;
+    width: 40%;
+    
+    /* background-color: red; */
+}
+#page3-part1 img{
+    margin-left: 20%;
+    margin-top: 20%;
+}
+#page3-part2{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1528837995482-b88b0a83a9e4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#text{
+    margin-left: 10%;
+    margin-top: 24%;
+    height: 100%;
+    width: 100%;
+}
+#image{
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    padding: 2vw 4vw;
+    object-fit: cover;
+    object-position: center;
+}
+#page4{
+    height: 90%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    position: relative;
+    padding: 4vw 4vw;
+    
+}
+#page4>h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: 'monument';
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 7vh;
+    
+}
+.elem{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    
+}
+.elem img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left: 15%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    object-fit: cover;
+}
+.elem h4{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    width: 6%;
+    font-weight: 500;
+
+}
+.elem .elem-part2{
+    width: 40%;
+}
+.elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 600;
+}
+.elem-part2 h5{
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+#onemore{
+    height: 80%;
+    width: 100%;
+    padding: 2vw 4vw;
+   
+    
+}
+#onemore img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#marque{
+    
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.5vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: "Oswald", sans-serif;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translatex(calc(-100% - 20px));
+    }
+    
+}
+
+
+
+.contain {
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    margin-top: 2vh;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    /* Adjusting navigation bar */
+    #nav {
+        height: 10vh;
+        padding-left: 11.5vw
+}
+
+#nav h2{
+    display: none;
+}
+   
+    /* Center and content sections */
+    #center {
+        padding: 2vw; /* Smaller padding */
+    }
+    #content video {
+        width: 100%; /* Ensure the video takes full width */
+        height: 80%;
+    }
+    #overlay {
+        padding: 2vw; /* Adjust padding for overlay text */
+        font-size: 12px; /* Smaller font size */
+    }
+    #over1 h1 {
+        font-size: 6vw; /* Adjust font size */
+    }
+    #over1 h2 {
+        font-size: 3vw;
+    }
+    #over2 h4 {
+        font-size: 3vw; /* Adjust heading size in overlay */
+    }
+
+    /* Scrolling image gallery */
+    #scroll img {
+        width: 30%; /* Make the images smaller in width */
+        height: 50%;
+    }
+    
+    /* Alphabet section */
+    #alphabet {
+        flex-wrap: wrap; /* Stack the alphabet items */
+        gap: 2vw;
+    }
+    #alphabet h5 {
+        font-size: 4vw; /* Smaller alphabet size */
+        margin-right: 5vw;
+    }
+    #alphabet h6 {
+        font-size: 3vw; /* Adjust small circle letter size */
+    }
+
+    /* Page 2 adjustments */
+    #page2 {
+        flex-direction: column;
+    }
+    #page2-part1, #page2-part2 {
+        width: 100%; /* Full width for images and content */
+        height: auto; /* Adjust for natural content size */
+    }
+    #page2-part2 img {
+        height: 50vh; /* Reduce image height */
+    }
+    #written h2 {
+        font-size: 16px; /* Smaller text size */
+    }
+    #written p {
+        font-size: 12px;
+    }
+
+    /* Page 3 adjustments */
+    #page3 {
+        flex-direction: column;
+    }
+    #page3-part1, #page3-part2 {
+        width: 100%; /* Full width for images */
+    }
+    #page3-part1 img {
+        display: none;
+    }
+    #text {
+        margin-top: 10%;
+        font-size: 14px;
+    }
+
+    /* Page 4 adjustments */
+    #page4 h1 {
+        font-size: 6vw; /* Smaller text for titles */
+    }
+    .elem {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto;
+    }
+    .elem img {
+        position: static; /* Remove absolute positioning */
+        opacity: 1; /* Make images fully visible */
+        height: 60px; /* Smaller image size */
+        width: 60px;
+        
+    }
+    .elem h4 {
+        font-size: 4vw;
+    }
+    .elem-part2 h1 {
+        font-size: 5vw;
+        display: none;
+    }
+    .elem-part2 h5 {
+        font-size: 3vw;
+        display: none;
+    }
+
+    /* One more section */
+    #onemore img {
+        height: 50vh; /* Reduce image height */
+    }
+
+    /* Marquee adjustments */
+    #marque h1 {
+        font-size: 6vw; /* Adjust marquee text size */
+    }
+
+    /* Footer section adjustments */
+    .contain {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+    .col-md-4 {
+        flex: 0 0 100%; /* Full width columns */
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 16px; /* Adjust text sizes */
+    }
+    p {
+        font-size: 14px;
+    }
+    .social-icons a {
+        font-size: 18px;
+    }
+}
